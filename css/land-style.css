@@ -1,0 +1,356 @@
+
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 43px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+:root {
+    --dark-Grayish-Blue:hsl(210, 10%, 33%);
+    --Grayish-blue: hsl(201, 11%, 66%);
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+} 
+
+.header-image {
+    width: 100%;
+    height: 320px;
+    background-image: url("../images/bg-header-desktop.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-image .logo-img {
+    background-image: url("../images/logo.svg");
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.title-head ,
+.last-head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -4%;
+    margin-bottom: 10%;
+}
+
+
+.title-head .heading-first ,
+.last-head .heading-first{
+    font-size: 38px;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 2%;
+}
+
+.title-head p ,
+.last-head p {
+    color: var(--Grayish-blue);
+    width: 630px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 19px;
+}
+
+.last-head p {
+    width: 700px;
+}
+
+.title-head .flex-bottom ,
+.last-head .flex-bottom {
+    display: flex;
+    width: 530px;
+    justify-content: center;
+}
+
+.flex-bottom div:first-child {
+    width: 230px;
+    height: 45px;
+    background-color: var(--strong-cyan);
+    color: white;
+    text-align: center;
+    margin-right: 2%;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: 0 2px 0 0 hsl(171deg 69% 35%);
+}
+
+.flex-bottom div:last-child {
+    width: 230px;
+    height: 45px;
+    background-color: var(--light-blue);
+    color: white;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 30px;
+    box-shadow: 0 2px 0 0 hsl(233deg 44% 45%);
+
+}
+
+
+.section ,
+.another-title ,
+.charge {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8%;
+}
+
+/* another-title */
+.another-title {
+    margin-bottom: 4%;
+}
+ 
+.charge {
+    margin-bottom: 2%;
+}
+/* end-another-title */
+
+.section .heading-section ,
+.another-title .ano-heading ,
+.charge .heading-charge {
+    font-size: 34px;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 1%;
+}
+
+.section p ,
+.another-title p ,
+.charge p{
+    color: var(--Grayish-blue);
+    width: 730px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 3%;
+    font-size: 18px;
+}
+
+.img-pc {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10%;
+}
+
+.img-pc img {
+    margin-right: 8%;
+    margin-left: -2%;
+}
+
+.img-pc .group-pc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+.group-pc :is(.search , .icloud , .complete) {
+    margin-bottom: 14%;
+}
+
+.search .search-heading ,
+.icloud .icloud-heading ,
+.complete .complete-heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    
+}
+
+.search p ,
+.icloud p ,
+.complete p {
+    width: 340px;
+    line-height: 30px;
+    font-size: 16px;
+    color: var(--Grayish-blue);
+}
+
+/* another-img */
+
+.another-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6%;
+}
+
+/* end-another-img */
+
+/* list-of-some */
+.list-of-some {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.list-of-some :is(.blacklist , .plain) {
+    margin-right: 2%;
+}
+
+.list-of-some .blacklist {
+    padding-top: 21px;
+}
+
+
+.blacklist img ,
+.plain img ,
+.sneak img {
+    margin-bottom: 6%;
+    text-align: center
+}
+
+.blacklist ,
+.plain ,
+.sneak {
+    text-align: center;
+}
+
+.blacklist .heading-blacklist ,
+.plain .heading-plain ,
+.sneak .heading-sneak {
+    color: var(--dark-Grayish-Blue);
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.blacklist p ,
+.plain p ,
+.sneak p {
+    font-size: 16px;
+    line-height: 29px;
+    color: var(--Grayish-blue);
+    width: 350px;
+    text-align: center;
+}
+
+/* end-list-of-some */
+
+.names-of-companies {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15%;
+}
+
+.names-of-companies img:not(:last-child) {
+    margin-right: 7%;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 130px;
+    background-color: hsl(201deg 11% 66% / 11%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+
+
+.footer .center-foot {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.footer .center-foot img {
+    width: 55px;
+    height: 55px;
+}
+
+
+.footer .words-foot {
+    display: flex;
+    /* margin-left: -6%; */
+    justify-content: space-between;
+    width: 500px;
+}
+
+.words-foot .first-word {
+    color: var(--dark-Grayish-Blue);
+    margin-right: 5%;
+    font-size: 19px;
+}
+
+.right-media {
+    display: flex; 
+    width: 130px;
+    justify-content: space-between; 
+}
+
+.right-media img {
+    width: 26px;
+    height: 26px;
+}
+
+.right-media img:not(:last-child) {
+    margin-bottom: 3%;
+}
+
+
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Weights: 400, 600
+
+## Icons
+
+For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
