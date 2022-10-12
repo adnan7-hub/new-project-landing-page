@@ -28,11 +28,25 @@ body {
     align-items: center;
 }
 
+@media (max-width: 676px) {
+    .header-image {
+        width: 600px;
+    }
+}
+
+
 .header-image .logo-img {
     background-image: url("../images/logo.svg");
     background-size: cover;
     width: 100px;
     height: 100px;
+}
+
+@media (max-width: 676px) {
+    .header-image .logo-img {
+        width: 125px;
+        height: 125px;
+    }
 }
 
 .title-head ,
@@ -46,6 +60,14 @@ body {
     margin-bottom: 10%;
 }
 
+@media (max-width: 676px) {
+    .title-head ,
+    .last-head {
+        width: 600px;
+        margin-bottom: 32%;
+    }
+}
+
 
 .title-head .heading-first ,
 .last-head .heading-first{
@@ -53,6 +75,14 @@ body {
     font-weight: 600;
     color: hsl(210, 10%, 33%);
     margin-bottom: 2%;
+}
+
+@media (max-width: 676px) {
+    .title-head .heading-first ,
+    .last-head .heading-first {
+        padding: 0 17%;
+        text-align: center;
+    }
 }
 
 .title-head p ,
@@ -65,8 +95,24 @@ body {
     font-size: 19px;
 }
 
+@media (max-width: 676px) {
+    .title-head p ,
+    .last-head p {
+        width: 346px;
+        font-size: 18px;
+    }
+}
+
 .last-head p {
     width: 700px;
+}
+
+@media (max-width: 676px) {
+    .last-head p {
+        width: 345px;
+        font-size: 18px;
+        margin-bottom: 8%;
+    }
 }
 
 .title-head .flex-bottom ,
@@ -74,6 +120,17 @@ body {
     display: flex;
     width: 530px;
     justify-content: center;
+}
+
+@media (max-width: 676px ) {
+    .title-head .flex-bottom ,
+    .last-head .flex-bottom {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .flex-bottom div:first-child {
@@ -89,6 +146,14 @@ body {
     box-shadow: 0 2px 0 0 hsl(171deg 69% 35%);
 }
 
+@media (max-width: 676px) {
+    .flex-bottom div:first-child {
+        margin-bottom: 3%;
+        margin-right: 0;
+        width: 330px;
+    }
+}
+
 .flex-bottom div:last-child {
     width: 230px;
     height: 45px;
@@ -100,6 +165,12 @@ body {
     border-radius: 30px;
     box-shadow: 0 2px 0 0 hsl(233deg 44% 45%);
 
+}
+
+@media (max-width: 676px) {
+    .flex-bottom div:last-child {
+        width: 330px;
+    }
 }
 
 
@@ -114,13 +185,33 @@ body {
     margin-bottom: 8%;
 }
 
+@media (max-width: 676px) {
+    .section {
+        width: 600px;
+    }
+}
+
+
+
 /* another-title */
 .another-title {
     margin-bottom: 4%;
 }
+
+@media (max-width: 676px) {
+    .another-title {
+        margin-left: 6%;
+    }
+}
  
 .charge {
     margin-bottom: 2%;
+}
+
+@media (max-width: 676px) {
+    .charge {
+        margin-left: 6%;
+    }
 }
 /* end-another-title */
 
@@ -131,6 +222,16 @@ body {
     font-weight: 600;
     color: hsl(210, 10%, 33%);
     margin-bottom: 1%;
+}
+
+@media (max-width: 676px) {
+    .section .heading-section ,
+    .another-title .ano-heading ,
+    .charge .heading-charge {
+        padding: 0 17%;
+        text-align: center;
+        margin-bottom: 3%;
+    }
 }
 
 .section p ,
@@ -144,6 +245,15 @@ body {
     font-size: 18px;
 }
 
+@media (max-width: 676px) {
+    .section p ,
+    .another-title p ,
+    .charge p {
+        width: 346px;
+        font-size: 18px;
+    }
+}
+
 .img-pc {
     display: flex;
     align-items: center;
@@ -151,9 +261,26 @@ body {
     margin-bottom: 10%;
 }
 
+@media (max-width: 676px) {
+    .img-pc {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 27%;
+    }
+}
+
 .img-pc img {
     margin-right: 8%;
     margin-left: -2%;
+}
+
+@media (max-width: 676px) {
+    .img-pc img {
+        width: 400px;
+        text-align: center;
+        margin-left: 16%;
+        margin-bottom: 9%;
+    }
 }
 
 .img-pc .group-pc {
@@ -175,6 +302,15 @@ body {
     
 }
 
+@media (max-width: 676px) {
+    .search .search-heading ,
+    .icloud .icloud-heading ,
+    .complete .complete-heading {
+        text-align: center;
+        padding-left: 18%;
+    }
+}
+
 .search p ,
 .icloud p ,
 .complete p {
@@ -182,6 +318,16 @@ body {
     line-height: 30px;
     font-size: 16px;
     color: var(--Grayish-blue);
+}
+
+@media (max-width: 676px) {
+    .search p ,
+    .icloud p ,
+    .complete p {
+        width: 303px;
+        text-align: center;
+        margin-left: 10%;
+    }
 }
 
 /* another-img */
@@ -193,6 +339,16 @@ body {
     margin-bottom: 6%;
 }
 
+@media (max-width: 676px) {
+    .another-img {
+        width: 373px;
+        height: 287px;
+        text-align: center;
+        margin-left: 12%;
+        margin-bottom: 9%;
+    }
+}
+
 /* end-another-img */
 
 /* list-of-some */
@@ -202,6 +358,15 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 10%;
+}
+
+@media (max-width: 676px) {
+    .list-of-some {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 23%;
+    }
 }
 
 .list-of-some :is(.blacklist , .plain) {
@@ -224,6 +389,14 @@ body {
 .plain ,
 .sneak {
     text-align: center;
+}
+
+@media (max-width: 676px) {
+    .blacklist ,
+    .plain ,
+    .sneak {
+        margin-bottom: 8%;
+    }
 }
 
 .blacklist .heading-blacklist ,
@@ -256,8 +429,24 @@ body {
     margin-bottom: 15%;
 }
 
+@media (max-width: 676px) {
+    .names-of-companies {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 32%;
+    }
+}
+
 .names-of-companies img:not(:last-child) {
     margin-right: 7%;
+}
+
+@media (max-width: 676px) {
+    .names-of-companies img:not(:last-child) {
+        margin-bottom: 11%;
+        margin-right: unset;
+    }
 }
 
 /* footer */
@@ -271,6 +460,16 @@ body {
     margin: 0;
 }
 
+@media (max-width: 676px) {
+    .footer {
+        width: 557px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 500px;
+    }
+}
+
 
 .footer .center-foot {
     width: 65%;
@@ -279,18 +478,41 @@ body {
     align-items: center;
 }
 
+@media (max-width: 676px) {
+    .footer .center-foot {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 
 .footer .center-foot img {
     width: 55px;
     height: 55px;
 }
 
+@media (max-width: 676px) {
+    .footer .center-foot img {
+        margin-bottom: 10%;
+    }
+}
+
+
 
 .footer .words-foot {
-    display: flex;
-    /* margin-left: -6%; */
+    display: flex ;
     justify-content: space-between;
     width: 500px;
+}
+
+
+@media (max-width: 676px) {
+    .footer .words-foot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 7%;
+    }
 }
 
 .words-foot .first-word {
@@ -299,10 +521,27 @@ body {
     font-size: 19px;
 }
 
+@media (max-width: 676px) {
+    .words-foot .first-word {
+        text-align: center;
+        margin-bottom: 3%;
+    }
+
+    .words-foot .first-word div:first-child {
+       margin-bottom: 6%; 
+    }
+}
+
 .right-media {
     display: flex; 
     width: 130px;
     justify-content: space-between; 
+}
+
+@media (max-width: 676px) {
+    .right-media {
+        width: 170px;
+    }
 }
 
 .right-media img {
@@ -315,42 +554,3 @@ body {
 }
 
 
-# Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Strong Cyan: hsl(171, 66%, 44%)
-- Light Blue: hsl(233, 100%, 69%)
-
-### Neutral
-
-- Dark Grayish Blue: hsl(210, 10%, 33%)
-- Grayish Blue: hsl(201, 11%, 66%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 18px
-
-### Fonts
-
-- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
-- Weights: 400, 600
-
-## Icons
-
-For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com)
-- [IcoMoon](https://icomoon.io)
-- [Ionicons](https://ionicons.com)
