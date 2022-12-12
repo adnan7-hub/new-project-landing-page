@@ -528,7 +528,7 @@ body {
     }
 
     .words-foot .first-word div:first-child {
-       margin-bottom: 6%; 
+        margin-bottom: 6%; 
     }
 }
 
@@ -554,3 +554,28 @@ body {
 }
 
 
+
+
+.to-top {
+    text-decoration: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    background-color: rgb(27, 46, 99);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.to-top i {
+    color: white;
+    font-size: 20px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
